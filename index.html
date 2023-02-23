@@ -360,8 +360,11 @@
 
     <!-- Form #3 -->
     <div class="container">
-      <form action="https://formsubmit.co/sales.abler@gmail.com" method="POST">
-        <h3>Get in Touch</h3>
+      <form
+        action="https://formsubmit.co/ee05072d25d127a8f8c9913164d45208"
+        method="POST"
+      >
+        <!-- <h3>Get in Touch</h3> -->
         <input type="text" name="name" placeholder="Name" required />
         <input
           type="text"
@@ -369,12 +372,13 @@
           placeholder="Your Best Email"
           required
         />
-        <input type="text" name="Number" placeholder="Mobile Number" required />
+        <input type="text" name="number" placeholder="Mobile Number" required />
         <textarea
           name="message"
           rows="4"
           placeholder="How can we help you?"
         ></textarea>
+        <input type="hidden" name="_next" value="thanks.html" />
         <button type="Submit">Submit</button>
       </form>
     </div>
@@ -535,9 +539,8 @@
         </div>
       </div>
     </footer>
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
-
     <!-- Form #2 jS -->
+    <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script> -->
     <!-- <script>
       function sendEmail() {
         Email.send({
