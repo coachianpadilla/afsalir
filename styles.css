@@ -12,11 +12,22 @@ nav {
   font-weight: bold;
 }
 
-:root {
+/* :root {
   --primary-color: #edf2fc;
   --secondary-color: #212121;
-  /* --primary-color: #000106;
-  --secondary-color: #fff; */
+}
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
+} */
+:root {
+  /* --primary-color: #edf2fc; */
+  --primary-color: #fff;
+  --secondary-color: #212121;
+}
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
 }
 #icon {
   width: 30px;
@@ -34,11 +45,16 @@ nav {
   border-radius: 100%;
 }
 
+div h1 {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
 .af-txt-001 {
   font-family: "roboto mono", sans-serif;
-  color: rgb(217, 90, 0);
+  color: rgb(251, 255, 0);
   text-shadow: 0px 0px 10px rgb(81, 81, 81);
-  text-shadow: 0px 0px 10px rgb(204, 255, 0);
+  /* text-shadow: 0px 0px 10px rgb(204, 255, 0); */
 }
 
 .af-txt-002 {
@@ -141,8 +157,8 @@ nav {
 .container {
   width: 100%;
   height: 100vh;
-  background: #fff;
-  /* background: var(--primary-color); */
+  /* background: #fff; */
+  background: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,8 +185,8 @@ form textarea {
   margin: 10px 0;
   padding: 20px;
   outline: none;
-  background: #f5f5f5;
-  /* background: var(--primary-color); */
+  /* background: #f5f5f5; */
+  background: var(--primary-color);
   font-size: 16px;
 }
 form button {

@@ -277,7 +277,7 @@
         </div>
 
         <!-- portfolio -->
-        <div class="row mt-5 pt-5 af-txt-002">
+        <div class="row af-txt-002">
           <h1 class="heading display-5 fw-bold pt-5" id="scrollspyHeading3">
             Our Clients
           </h1>
@@ -376,7 +376,7 @@
         </div>
 
         <!-- Contact Page -->
-        <div class="row mt-5 pt-5 af-txt-002">
+        <div class="row af-txt-002">
           <h1 class="heading display-5 fw-bold pt-5" id="scrollspyHeading4">
             Let's Get Started
           </h1>
@@ -577,6 +577,19 @@
         </div>
       </div>
     </footer>
+    <!-- Dark Mode jS -->
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "img/sun.png";
+        } else {
+          icon.src = "img/moon.png";
+        }
+      };
+    </script>
+
     <!-- Form #2 jS -->
     <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script> -->
     <!-- <script>
