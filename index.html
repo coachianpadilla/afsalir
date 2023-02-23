@@ -35,6 +35,38 @@
     <title>Af Salir Digital Marketing Services</title>
   </head>
   <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "102818574790240");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v16.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
     <!-- Navbar Home Page -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container-fluid">
@@ -50,7 +82,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
@@ -64,6 +96,8 @@
               <a class="nav-link" href="#scrollspyHeading4">Let's Talk</a>
             </li>
           </ul>
+          <!-- Dark Mode -->
+          <img src="img/moon.png" id="icon" alt="dark mode button" />
         </div>
       </div>
     </nav>
