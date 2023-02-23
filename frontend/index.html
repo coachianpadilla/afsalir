@@ -29,6 +29,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- JavaScript -->
+    <!-- <script src="contact.js"></script> -->
+
     <title>Af Salir Digital Marketing Services</title>
   </head>
   <body>
@@ -355,8 +358,50 @@
       </div>
     </div>
 
-    <!-- form -->
-    <form>
+    <!-- Form #3 -->
+    <div class="container">
+      <form action="https://formsubmit.co/sales.abler@gmail.com" method="POST">
+        <h3>Get in Touch</h3>
+        <input type="text" name="name" placeholder="Name" required />
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Best Email"
+          required
+        />
+        <input type="text" name="Number" placeholder="Mobile Number" required />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button type="Submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Form #2 -->
+    <!-- <div class="container">
+      <form onsubmit="sendEmail(); reset(); return false">
+        <h3>Get in Touch</h3>
+        <input type="text" id="name" placeholder="Name" required />
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Best Email"
+          required
+        />
+        <input type="text" id="mobile" placeholder="Mobile Number" required />
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button type="Submit">Send</button>
+      </form>
+    </div> -->
+
+    <!-- Form #1 -->
+    <!-- <form>
       <div class="form-area" id="form-body">
         <div class="container-fluid">
           <div class="row">
@@ -368,40 +413,40 @@
             <div class="col-sm-12 col-lg-6">
               <div class="right">
                 <i class="fa fa-caret-left"></i>
-                <form>
+                <form id="contact-form" method="post" action="#">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"
-                      >Your Name</label
-                    >
+                    <label for="name" class="form-label">Your Name</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputEmail1"
+                      id="name"
+                      name="name"
                       aria-describedby="emailHelp"
                     />
                     <div id="emailHelp" class="form-text"></div>
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"
-                      >Email Address</label
-                    >
+                    <label for="email" class="form-label">Email Address</label>
                     <input
                       type="email"
                       class="form-control"
-                      id="exampleInputPassword1"
+                      id="email"
+                      name="email"
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"
-                      >Message</label
-                    >
+                    <label for="message" class="form-label">Message</label>
                     <textarea
-                      type="email"
                       class="form-control"
-                      id="exampleInputPassword1"
+                      id="message"
+                      name="message"
                     ></textarea>
                   </div>
-                  <button type="submit" class="btn btn-secondary">
+                  <button
+                    type="submit"
+                    class="btn btn-secondary"
+                    onclick="runActivity()"
+                  >
                     Submit
                   </button>
                 </form>
@@ -410,9 +455,9 @@
           </div>
         </div>
       </div>
-    </form>
+    </form> -->
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer>
       <div class="container-fluid">
         <div class="py-5 p-sm-5 mx-0">
@@ -490,5 +535,23 @@
         </div>
       </div>
     </footer>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Form #2 jS -->
+    <!-- <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "sales.abler@gmail.com",
+          Password: "Password",
+          To: "coachianpadilla@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Inquiry",
+          Body: "And this is the body",
+        }).then(
+          message => alert(message)
+          );
+      }
+    </script> -->
   </body>
 </html>
