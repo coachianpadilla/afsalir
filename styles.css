@@ -1,5 +1,5 @@
 nav {
-  background-color: rgb(225, 120, 45);
+  background-color: #e1782d;
 }
 
 .navbar-collapse {
@@ -12,22 +12,13 @@ nav {
   font-weight: bold;
 }
 
-/* :root {
-  --primary-color: #edf2fc;
-  --secondary-color: #212121;
-}
-.dark-theme {
-  --primary-color: #000106;
-  --secondary-color: #fff;
-} */
 :root {
-  /* --primary-color: #edf2fc; */
-  --primary-color: #fff;
-  --secondary-color: #212121;
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
 }
 .dark-theme {
-  --primary-color: #000106;
-  --secondary-color: #fff;
+  --primary-color: #1a1a1a;
+  --secondary-color: #cccccc;
 }
 #icon {
   width: 30px;
@@ -38,6 +29,10 @@ nav {
   text-align: center;
 }
 
+body {
+  background: var(--primary-color);
+}
+
 /* Carousel */
 .carousel .carousel-indicators button {
   width: 10px;
@@ -45,24 +40,28 @@ nav {
   border-radius: 100%;
 }
 
+/* Our Services */
 div h1 {
-  margin-top: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .af-txt-001 {
   font-family: "roboto mono", sans-serif;
-  color: rgb(251, 255, 0);
-  text-shadow: 0px 0px 10px rgb(81, 81, 81);
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: right;
+  color: #e1782d;
+  text-shadow: 0px 0px 10px rgb(146, 145, 145);
   /* text-shadow: 0px 0px 10px rgb(204, 255, 0); */
 }
 
 .af-txt-002 {
+  color: var(--secondary-color);
   text-align: center;
 }
 
 .af-txt-003 {
-  color: rgb(225, 120, 45);
+  color: #e1782d;
 }
 
 .scrollspy-item {
@@ -79,7 +78,7 @@ div h1 {
   font-weight: 500;
   border: none;
   border-radius: 0;
-  background-color: rgb(225, 120, 45);
+  background-color: #e1782d;
   width: 180px;
   color: var(--primary-color);
   padding: 15px 0;
@@ -89,63 +88,6 @@ div h1 {
   cursor: pointer;
 }
 
-/* form #1 */
-/* #form-body {
-  background: #e8e8e8;
-}
-
-.form-area {
-  padding-top: 5%;
-}
-
-.left {
-  background: rgb(225, 120, 45);
-  padding: 200px 98px;
-  margin-bottom: 100px;
-}
-
-.left h2 {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-weight: 500;
-  font-size: 48px;
-}
-
-.left h2 span {
-  font-weight: 100;
-}
-
-.right {
-  padding: 70px;
-  position: relative;
-}
-
-.right i {
-  position: absolute;
-  font-size: 80px;
-  left: -45px;
-  top: 40%;
-  color: #fff;
-}
-
-.form-control {
-  border: 2px solid #000;
-}
-
-.right button {
-  font-weight: 500;
-  border: none;
-  border-radius: 0;
-  background-color: #252525;
-  width: 180px;
-  color: #fff;
-  padding: 15px 0;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-} */
-
 /* form #2, #3*/
 * {
   margin: 0;
@@ -154,21 +96,19 @@ div h1 {
   font-family: "poppins", sans-serif;
 }
 
-.container {
+.form-container {
   width: 100%;
   height: 100vh;
-  /* background: #fff; */
-  background: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 form {
-  background: rgb(225, 120, 45);
+  background: #e1782d;
   display: flex;
   flex-direction: column;
-  padding: 2vw 4vw;
+  padding: 2vw 2vw;
   width: 90%;
   max-width: 600px;
   border-radius: 10px;
@@ -185,16 +125,16 @@ form textarea {
   margin: 10px 0;
   padding: 20px;
   outline: none;
-  /* background: #f5f5f5; */
+  color: var(--secondary-color);
   background: var(--primary-color);
   font-size: 16px;
 }
 form button {
   padding: 15px;
-  background: #555;
-  /* background: #ff5361; */
+  background: var(--secondary-color);
   color: var(--primary-color);
   font-size: 18px;
+  font-weight: 600;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -203,20 +143,26 @@ form button {
   /* border-radius: 30px; */
 }
 
+/* Thank You Page */
 .thanks {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+div div h1 {
+  color: var(--secondary-color);
+}
+div div p {
+  color: var(--secondary-color);
+}
 
 /* footer */
 footer {
   color: var(--secondary-color);
-  background-color: rgb(225, 120, 45);
+  background-color: #e1782d;
 }
-
 i {
-  color: rgb(225, 120, 45);
+  color: #ff4c29;
   font-weight: 500;
   font-size: x-large;
 }
@@ -226,7 +172,7 @@ a.nav-link:hover {
 }
 
 a.scrollspy-item:hover {
-  color: rgb(225, 120, 45);
+  color: #e1782d;
 }
 
 /* font-family: 'Poppins', sans-serif;
