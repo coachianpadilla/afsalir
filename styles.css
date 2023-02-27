@@ -57,10 +57,13 @@ div h1 {
   padding-top: 100px;
 }
 
+.services-right-txt {
+  font-size: 20px;
+}
+
 .af-txt-002 {
   color: var(--secondary-color);
   text-align: center;
-  font-size: large;
 }
 
 .af-txt-003 {
