@@ -40,19 +40,21 @@ body {
   border-radius: 100%;
 }
 
-/* Our Services */
-div h1 {
-  padding-top: 100px;
-}
-
-.af-txt-001 {
+h4 {
   font-family: "roboto mono", sans-serif;
   font-weight: bolder;
   font-size: xx-large;
-  text-align: right;
+  text-align: center;
   color: #e1782d;
-  text-shadow: 0px 0px 10px rgb(146, 145, 145);
-  /* text-shadow: 0px 0px 10px rgb(204, 255, 0); */
+  color: #dbc901;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  /* background-color: rgba(37, 37, 37, 0.6);
+  padding: 1px 1px; */
+}
+
+/* Our Services */
+div h1 {
+  padding-top: 100px;
 }
 
 .af-txt-002 {
